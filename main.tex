@@ -1,0 +1,50 @@
+\documentclass[a4paper,11pt]{article}
+%% PREAMBEL %%
+\input{template/preamble.tex}
+
+%% DOKUMENT START %%
+\begin{document}
+
+\pagenumbering{roman} % Sidenummerering for forord og TOC
+
+%% FORSIDE %%
+\include{template/title}
+
+%% Declaration %%
+\include{template/declaration.tex}
+
+%% INNHOLDSFORTEGNELSE %%
+\setlength{\parskip}{.5em} % Setter linjeavstander i TOC litt mindre
+\cleardoublepage
+\tableofcontents
+\setlength{\parskip}{1em} % Går tilbake til standard avstand
+\newpage
+
+%% SAMMENDRAG & FORORD %%
+
+\pagenumbering{arabic} % Sidenummerering for resten av dokumentet
+
+%% SEKSJONER %%
+\section{Introduction to OPSYS}
+
+\section{Booting and Printing}
+
+\section{Interrupts}
+
+\section{Memory and PIT}
+
+\section{Music Player}
+
+\section{Improvisation}
+
+\section{Pull Request}
+
+
+%% BIBLIOGRAFI %%
+\printbibliography[heading=bibintoc]
+\newpage
+
+%% VEDLEGG %%
+
+%% DOKUMENT SLUTT %%
+\end{document}
